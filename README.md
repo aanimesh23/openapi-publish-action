@@ -1,4 +1,4 @@
-# Openapi Publish Action to Postman
+# Publish Action: OpenApi to Postman
 
 This is a Github Action used to create and update your API documentation in postman using OpenApi Spec.
 ## Usage

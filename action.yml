@@ -1,4 +1,4 @@
-name: publish-open-api
+name: Publish OpenApi Spec to Postman
 description: "This is a Github Action used to create and update your API documentation in postman using OpenApi Spec."
 author: Animesh Agrawal <aanimesh23@gmail.com>
 branding:
