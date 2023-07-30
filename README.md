@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: aanimesh23/openapi-publish-action@master
+    - uses: aanimesh23/openapi-publish-action@v1
       with:
         collectionName: Backend Apis
         workspaceName: Team Workspace

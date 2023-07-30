@@ -23,4 +23,4 @@ inputs: # user can input the name inside the name of user variable , description
     default: ''
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'dist/index.js'

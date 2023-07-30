@@ -4,7 +4,9 @@
   "description": "A Github Action responsible for publishing and syncing open api specification",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "all": "npm run lint && npm run prepare"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,7 @@
   "dependencies": {
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
+    "@vercel/ncc": "^0.36.1",
     "axios": "^1.4.0",
     "git-repo-name": "^1.0.1",
     "openapi-to-postmanv2": "^4.15.0",
