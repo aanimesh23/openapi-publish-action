@@ -1,0 +1,26 @@
+name: publish-open-api
+description: "This is a Github Action used to create and update your API documentation in postman using OpenApi Spec."
+author: Animesh Agrawal <aanimesh23@gmail.com>
+branding:
+  icon: package
+  color: gray-dark
+inputs: # user can input the name inside the name of user variable , descriptions etc
+  collectionName:
+    description: 'Name of the collection to want created/updated in Postman. Defaults to Github Repo Name appended with "Auto Generated"'
+    required: false
+    default: ''
+  workspaceName:
+    description: 'Name of the postman workspace to want the package to be created at'
+    required: true
+    default: ''
+  postmanApiKey:
+    description: 'Postman API Key'
+    required: true
+    default: ''
+  openApiSpec:
+    description: 'It can be an url or the file (.yml)'
+    required: true
+    default: ''
+runs:
+  using: 'node16'
+  main: 'index.js'

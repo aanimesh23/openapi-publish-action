@@ -1,0 +1,20 @@
+{
+  "name": "@d11/openapi-publish-action",
+  "version": "1.0.0",
+  "description": "A Github Action responsible for publishing and syncing open api specification",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "axios": "^1.4.0",
+    "git-repo-name": "^1.0.1",
+    "openapi-to-postmanv2": "^4.15.0",
+    "yaml": "^2.3.1"
+  }
+}
